@@ -1,0 +1,105 @@
+/* .outerbox
+{
+    border: 2px solid black;
+	width:100%;
+    position: relative;
+	height: 36px;
+	overflow: hidden;
+	z-index:45;
+}
+.sliderbox 
+{
+    border: 2px solid red;
+	background-color: white;
+	position: relative;
+	width:6997px;
+    height: 36px;
+	animation-name: slide;
+	animation-duration: 130s;
+	animation-iteration-count: infinite;
+	z-index:45;
+}	
+
+@keyframes slide
+{    
+    
+	from
+	{
+		left:0px;
+	}
+    to
+	{
+		left:-6997px;
+	}
+	
+}
+
+ */
+ /* Container styles */
+ .scrolling-text-container {
+    background-color: #eff5ff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Inner container styles */
+.scrolling-text-inner {
+    display: flex;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    /* padding: px 0; */
+}
+
+/* Text styles */
+.scrolling-text {
+    display: flex;
+}
+
+.scrolling-text-item {
+    padding: 0 30px;
+}
+
+/* Apply the animation to the text items */
+.scrolling-text-inner>div {
+    animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+
+/* Pause the animation when a user hovers over it */
+.scrolling-text-container:hover .scrolling-text-inner>div {
+    animation-play-state: infinite;
+}
+.scrolling-text-item p
+{
+    /* background-color: red; */
+    width: 90em;
+    text-align: end;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+.scrolling-text-item b
+{
+color: red;
+}
+
+/* Setting the Animation using Keyframes */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}

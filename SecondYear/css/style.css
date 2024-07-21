@@ -1,0 +1,206 @@
+
+/* first page style */
+
+.header h2
+{
+ text-align: center;
+ padding: 5px;
+}
+
+.header p
+{
+ text-align: center;
+ 
+}
+.header {
+  background-color: #1bd1e268; 
+  color: #fff; 
+  padding: 4px; 
+  margin-top: 1%;
+}
+#button1
+{
+  margin-left: 80%;
+  
+}
+
+.footer
+{
+  text-align: center;
+  background-color: #cbe1e3;
+  color: #fff;
+
+}
+.text a
+{
+  text-decoration: none;
+  color: black;
+}
+
+.card{
+    display: inline-block;
+    margin: 2%;
+    border: none;
+}
+.page h1, h3{
+    text-align: center;
+}
+
+.page {
+    background-color: #cbe1e3;
+    color: #fff;
+    padding: 2px;
+}
+#button1 a
+{
+  text-decoration: none;
+  color: rgb(7, 7, 7);
+
+}
+
+.card-body button a
+{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.drop-down
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(179, 218, 194);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.322);
+    width: 400px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+
+}
+div.drop-down-1{
+    margin-bottom: 0px;
+    bottom:50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(179, 218, 194);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.322);
+    width: 400px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px
+}
+
+.arrow {
+    font-size: 30px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+img {
+    height: 30px;
+}
+
+.list {
+    background-color: rgb(214, 216, 214);
+    position: absolute;
+    top: 45px;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.417);
+    max-height: 250px;
+    overflow-y: scroll;
+    width: 100%;
+    display: none;
+    transform: translateY(-100%); /* Move the dropdown list up by default */
+}
+
+.show {
+    display: block;
+    transform: translateY(0); /* Move the dropdown list down when open */
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+}
+
+.item:hover {
+    background-color: rgb(237, 241, 239);
+}
+
+.container1 {
+    margin-left: 55%;
+    
+}
+
+/* Apply margin-top to push the content below down when dropdown is open */
+.container, .container1 {
+    transition: margin-top 0.3s;
+}
+
+.open .container {
+    transform: translateY(0);
+    transition: transform 0.3s;
+}
+
+
+@media (max-width:800px) {
+    .container, .container1 {
+      width: 100%;
+      margin: 15px 0; /* Increase the margin to create more space between the containers */
+    }
+    .drop-down,div.drop-down-1
+   {
+    width: 90%;
+   }
+
+
+    /* Reset styles for the wrappers and images inside containers */
+    .container .wrapper, .container1 .wrapper {
+      display: block;
+      text-align: center;
+      
+    }
+    .container .wrapper, .container1 .wrapper {
+      display: flex;
+      text-align: center;
+      justify-content: space-around;
+  
+      
+    }
+    /* Reset the position of the dropdown list and remove the transform */
+    .list {
+      position: absolute;
+      top: 45px;
+      transform: translateY(0); /* Remove the transform */
+      z-index: 1;
+      height: 500px;
+    }
+    .container .selectedImg, .container1 .selectedImg {
+      margin: 0 auto;
+    }
+
+   
+    /* Set a specific width for the containers on mobile */
+    .container, .container1 {
+      width: 100%;
+    }
+
+
+    
+.container1 {
+ margin-right: 55%; 
+ margin-top: 110px;
+}
+
+}

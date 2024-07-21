@@ -1,0 +1,205 @@
+@media screen and (max-width: 991px) {
+    h3{
+        font-size: 1.2rem;
+    }
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .primary-btn{
+        width: 101%;
+    }
+    .main-nav{
+        overflow: initial;
+    }
+
+    .company-links{
+        position: absolute;
+        background-color: white;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        z-index: 999;
+        padding-block: 20px;
+        transition: 0.2s ease-in-out;
+    }
+
+    .company-links.active{
+        left: 0 !important;
+    }
+
+    .company-links ul{
+        flex-direction: column;
+    }
+
+    .reviews-card{
+        width: 25%;
+    }
+
+}
+
+@media screen and (max-width:769px){
+
+    .primary-btn{
+        width: 100%;
+    }
+    .header-container{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .header-left{
+        max-width: 100vw; 
+        text-align: center;
+    }
+    .header-right img{
+        width: 60%;
+        margin: 0 auto 5% 22%;
+        margin-top: 18px;
+    }
+
+    .resource-container{
+        flex-wrap: wrap;
+    }
+
+    .resource-cards{
+       min-width: calc(50% - 20px);
+       height: 200px;
+    }
+
+    .course-card{
+        height: 450px;
+        
+    }
+   
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .logo-col{
+        align-items: center;
+    }
+
+    .links-col{
+        align-items: stretch;
+    }
+}
+
+@media screen and (max-width:479px) {
+    
+
+    :root{
+        --padding-inline-section:20px ;
+    }
+    
+    h1{
+        font-size: 2rem;
+    
+    }
+    
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1rem; 
+    }
+    .resource-cards{
+        min-width: 100%;
+        height: 200px;
+    }
+    .course-card{
+        width: 100%;
+        height: 400px;
+    }
+
+    .view{
+        margin-left: 33%;
+    }
+
+    .view button{
+        width: 100%;
+    }
+
+    
+    /* .reviews-card{
+     width: 35%;
+    } */
+
+    .resource-container{
+        padding: 5%;
+    }
+
+    .course-container{
+        padding: 5%;
+    }
+
+    .about-container{
+        padding: 5%;
+    }
+
+    .reviews-container{
+        padding: 30px;
+    }
+    .reviews-card{
+        gap: 20px;
+        margin: 2%;
+        width: 95%;
+    }
+
+    .footer-container{
+        row-gap: 50px;
+    }
+
+     .footer-txt{
+        width: 290%;
+    }
+
+    .company-links li{
+        padding:2%;
+    }
+
+    .signupm-container{
+        flex-wrap: wrap;
+    }
+    .signup-container{
+        width: 90%;
+    }
+    input{
+        width: 130%;
+    }
+
+    /* Drop */
+    .dropdown{
+        width: 31%;
+    }
+
+    .syllabus-btn{
+        margin: 15%;
+    }
+
+    .dropdown_list{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .sub-container{
+        flex-wrap: wrap;
+     }
+
+     .drop-container{
+        width: 90%;
+        margin-left: 5%;
+     }
+
+     .drop-container h2{
+        margin-top: 5%;
+        margin-left: 10%;
+     }
+}
